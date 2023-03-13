@@ -1,0 +1,19 @@
+{
+    "baseUrl": "https://www.demoblaze.com/",
+    "password": "password123",
+    "username": "namann",
+    "logPassword": "namann",
+
+    "nameBilling":"Naman",
+    "countryBilling":"India",
+    "cityBilling":"Surat",
+    "creditCardBilling":"4111111111111111",
+    "creditCardMonth":"02",
+    "creadCardYear":"2028",
+
+    "browserStackUserName":"naman_sxuU92",
+    "browserStackKey":"VWtnAPxsH8CSrNxMDBiZ",
+    "browserStack":false,
+    "browser":"chrome",
+    "executionmode":"--headless"
+}

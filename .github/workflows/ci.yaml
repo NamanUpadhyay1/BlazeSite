@@ -1,0 +1,19 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 18
+        - name: Install
+          run: npm install
+        - name: Test
+          run: npm run browserstack
+        - uses: actions/upload-artifact@v3
+          with:
+            name: allureReport
+            path: ./allure-report
