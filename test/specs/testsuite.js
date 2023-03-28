@@ -11,8 +11,6 @@ const { hostname } = require("os")
 let date = new Date().getTime()
 const recentName = `naman${date}`
 
-
-
 describe("Verify user should be able to register an account",async ()=>
 {
     it("Navigate to register button and fill in details", async()=>
