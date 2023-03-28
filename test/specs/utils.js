@@ -84,6 +84,12 @@ class Utils
       await browser.acceptAlert()
     }
 
+    static async openSite(url)
+    {
+      await browser.url(url)
+      await browser.maximizeWindow()
+    }
+
     }
 
 module.exports = Utils

@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@wdio/selenium-standalone-service": "^8.5.6",
     "allure-commandline": "^2.21.0",
     "chai": "^4.3.7",
     "wdio": "^6.0.1"
@@ -27,6 +28,8 @@
     "@wdio/mocha-framework": "^8.5.6",
     "@wdio/spec-reporter": "^8.4.0",
     "chromedriver": "^111.0.0",
-    "wdio-chromedriver-service": "^8.1.1"
+    "wdio-chromedriver-service": "^8.1.1",
+    "wdio-edgedriver-service": "^2.1.2",
+    "wdio-safaridriver-service": "^2.1.0"
   }
 }

@@ -15,5 +15,6 @@
     "browserStackKey":"VWtnAPxsH8CSrNxMDBiZ",
     "browserStack":true,
     "browser":"chrome",
-    "executionmode":"--headless"
+    "executionmode":"--headless",
+    "browserStackChrome":"chrome"
 }
