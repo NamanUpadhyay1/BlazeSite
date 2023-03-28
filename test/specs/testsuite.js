@@ -17,7 +17,7 @@ describe("Verify user should be able to register an account",async ()=>
 {
     it("Navigate to register button and fill in details", async()=>
     {
-        await browser.url(dataInp.baseUrl)
+        await utils.openSite(dataInp.baseUrl)
         await utils.pauseTime(2000)
         await homePage.registerButton()
         await utils.pauseTime(2000)
@@ -34,7 +34,7 @@ describe("Verify user should be able to log into account",async ()=>
 {
     it("Navigate to the log in button and fill in details", async()=>
     {
-        await browser.url(dataInp.baseUrl)
+        await utils.openSite(dataInp.baseUrl)
         await utils.pauseTime(2000)
         await homePage.loginButton()
         await utils.pauseTime(2000)
@@ -50,7 +50,7 @@ describe("Verify user is able to purchase a mobile phone successfully", async()=
 {
     it("Navigate to correct URL", async()=>
     {
-        await browser.url(dataInp.baseUrl)
+        await utils.openSite(dataInp.baseUrl)
         await utils.pauseTime(2000)
     })
 
@@ -83,7 +83,7 @@ describe("Verify user is able to purchase a Laptop successfully", async()=>
 {
     it("Navigate to correct URL", async()=>
     {
-        await browser.url(dataInp.baseUrl)
+        await utils.openSite(dataInp.baseUrl)
         await utils.pauseTime(2000)
     })
 
@@ -115,7 +115,7 @@ describe("Verify user is able to purchase a Monitor successfully", async()=>
 {
     it("Navigate to correct URL", async()=>
     {
-        await browser.url(dataInp.baseUrl)
+        await utils.openSite(dataInp.baseUrl)
         await utils.pauseTime(2000)
     })
 
@@ -146,7 +146,7 @@ describe("Verify user is able to purchase a Monitor successfully", async()=>
 // {
 //     it("Navigate to correct URL", async()=>
 //     {
-//         await browser.url(dataInp.baseUrl)
+//         await utils.openSite(dataInp.baseUrl)
 //         await utils.pauseTime(2000)
 //     })
 

@@ -7,7 +7,7 @@ if (dataInp.browser == "chrome") {
             {
                 maxInstances: 5,
                 //
-                browserName: 'chrome',//chrome//firefox//MicrosoftEdge
+                browserName: dataInp.browserStackChrome,//chrome//firefox//MicrosoftEdge
 
                 acceptInsecureCerts: true,
                 "os": "OS X",
@@ -55,55 +55,53 @@ if (dataInp.browser == "chrome") {
 }
 }
 
+if (dataInp.browser == "safari") {
+    if (dataInp.browserStack) {
+        config.capabilities = [
+            {
+                maxInstances: 5,
+                //
+                browserName: 'Safari',//chrome//firefox//MicrosoftEdge
 
-// else if (dataInp.browser == 'Edge') {
-//     if (dataInp.browserStack) {
-//         config.capabilities =
-//             [
-//                 {
-//                     maxInstances: 5,
-                    
-//                     browserName: 'Edge',//chrome//firefox//Edge
+                acceptInsecureCerts: true,
+                "os": "OS X",
+                "osVersion": "Sierra",
+                "browserVersion": "10.1",
+                "local": "false",
+            }
 
-//                     acceptInsecureCerts: true,
+        ]
+        config.services =
+            [
 
-//                     "os": "OS X",
-//                     "osVersion": "Sierra",
-//                     "browserVersion": '103.0',
-//                     "local": "false",
-//                 }
+                ['browserstack']
 
-//             ]
-//         config.services =
-//             [
+            ]
+    }
+    else
+    {
+            {
+                config.capabilities =
+                    [
+                        {
+                            maxInstances: 5,
+                            
+                            browserName: 'safari',//chrome//firefox//MicrosoftEdge
 
-//                 ['browserstack']
+                            acceptInsecureCerts: true,
 
-//             ]
-//     }
-//     else {
+                        },
+                    ]
+                config.services =
+                    [
+
+                        ['selenium-standalone'],
+
+                    ]
+            }
         
-//             config.capabilities =
-//                 [
-//                     {
-//                         maxInstances: 5,
-                        
-//                         browserName: 'Edge',//chrome//firefox//Edge
-
-//                         'ms:edgeOptions':
-//                         {
-
-//                             args: [`${dataInp.executionmode}`, '--disable-gpu', '--disable-dev-shm-usage', '--window-size=1920,1080']
-//                         }
-//                     },
-//                 ]
-//             config.services =
-//                 [
-//                     ['edgedriver']
-//                 ]
-//         }
-// }
-
+}
+}
 
 
 exports.config = config;
