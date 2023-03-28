@@ -26,7 +26,7 @@ describe("Verify user should be able to register an account",async ()=>
         await homePage.regSubmitButton()
         await utils.pauseTime(4000)
         await utils.acceptAlert()
-        await utils.pauseTime(2000)
+        await utils.pauseTime(2000) 
     })
 })
 
