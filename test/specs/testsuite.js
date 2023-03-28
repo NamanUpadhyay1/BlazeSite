@@ -21,7 +21,7 @@ describe("Verify user should be able to register an account",async ()=>
         await utils.pauseTime(2000) 
         await homePage.registerButton()
         await utils.pauseTime(2000)
-        await homePage.userNameType(recentName)
+        await homePage.userNameType(recentName) 
         await homePage.passwordType()
         await homePage.regSubmitButton()
         await utils.pauseTime(4000)
