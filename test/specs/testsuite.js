@@ -18,7 +18,7 @@ describe("Verify user should be able to register an account",async ()=>
     it("Navigate to register button and fill in details", async()=>
     {
         await utils.openSite(dataInp.baseUrl)
-        await utils.pauseTime(2000)
+        await utils.pauseTime(2000) 
         await homePage.registerButton()
         await utils.pauseTime(2000)
         await homePage.userNameType(recentName)
